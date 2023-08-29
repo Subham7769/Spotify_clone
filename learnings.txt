@@ -1,0 +1,6 @@
+learning from this project-
+1-use of :root
+2-Css Variables
+4-overflow-y property & it's use case
+3-use of grid
+4-gutter spacing (gx- 1 to 5),(gy- 1 to 5),(g- 1 to 5), it provides padding between grid items

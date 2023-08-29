@@ -1,0 +1,183 @@
+:root{
+    --white: #fff;
+    --black:#000;
+    --light-grey:#232323;
+    --grey:#121212;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito", sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+}
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+main{
+    flex: 1;
+    display: flex;
+    width:100%;
+    padding: 10px;
+    overflow: hidden;
+    background-color: var(--black);
+}
+.sidebar-section{
+    position: relative;
+    width: 20%;
+    flex: 0.20;
+    overflow-y: auto;
+    margin-right: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    /* background-color: chartreuse; */
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    position: fixed!important;
+    top: 10px !important;;    
+    background-color: var(--black);
+    height: 70px;
+    width: 20%;
+    z-index: 1000!important;
+}
+.logo>a>img{
+    height: 55px;
+}
+.my-card{
+    height: 40px;
+    background-color: var(--black);
+}
+.my-card:hover{
+    background-color: var(--light-grey);
+}
+.my-card>a:hover,.third-card>ul>li>a{
+    color: var(--white);
+}
+.my-card>a>img{
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 25px;
+    height: 25px;
+}
+.first-card,.second-card,.third-card,.forth-card{
+    margin-top: 25px;
+    background-color: var(--black);
+    font-size: 12px;
+}
+.first-card,.songs_catagory{
+margin-top: 80px;
+}
+.third-card>ul>li{
+    margin: 10px 0px;
+}
+.forth-card{
+    margin-top: 10px;
+    }
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+.content-section{
+    position: relative;
+    width:80%;
+    flex: 0.80;
+    overflow-y: auto;
+    border-radius: 15px;
+    background-color: var(--grey);
+}
+.nav-button-left,.nav-button-right{
+    width: auto;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: absolute;
+    top: 20px;
+}
+.nav-button-left>img,.nav-button-right>img{
+    margin: 2px 5px ;
+}
+.nav-button-left{
+    left: 10px!important;
+}
+.nav-button-right{
+    border-radius: 20px;
+    right: 10px!important;
+    background-color: var(--black);
+}
+.nav-button-left>img:hover,.nav-button-right>img:hover{
+    transform: scale(1.1);
+}
+.songs_catagory,.show_catagory{
+ width: 80%;
+ margin-left: 40px;
+}
+.catagory{
+    background-color: var(--light-grey)!important;
+    height:70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.catagory>img{
+    margin-right: 20px;
+    height: 70px;
+    width: 70px;
+}
+.show_catagory{
+    margin-top: 20px;
+}
+.catagory_shows{
+    display: flex!important;
+    align-content: center!important;
+    width: 90%;
+    height: 280px!important;
+    background-color: var(--light-grey);
+}
+.card_Pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+}
+.card_Pic>img{
+    height: 90%!important;
+    width: 80%!important;
+    border-radius: 10px!important;
+}
+.show_title{
+    width: 100%;
+}
+.show_title>h6,.show_title>p{
+    margin: 20px;
+}
+.show_title>p{
+ font-size: 10px;
+ font-weight: 100!important;
+}
+.media-player-section{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: orangered;
+    /* background-color: var(--black); */
+}
