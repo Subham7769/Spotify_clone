@@ -8,7 +8,6 @@
     margin: 0px;
     padding: 0px;
 }
-
 html, body{
     height: 100%;
     margin: 0px;
@@ -23,27 +22,20 @@ a{
     color: var(--white);
     text-decoration: none;
 }
-main{
+
+/* header section */
+header {
+    position: fixed;
+    top: 0;
+    width: 15%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width:100vw;
-    background-color: var(--black);
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    z-index: 100;
 }
-.sidebar-section{
-    position: relative;
-    width: 20%;
-    flex: 0.20;
-    overflow-y: auto;
-    margin-right: 10px;
-    border-radius: 15px;
-    padding: 10px;
-    background-color: var(--black);
-    display: flex;
-    flex-direction: column;
-}
-.logo{
+header .logo{
     display: flex;
     justify-content: center;
     position: fixed!important;
@@ -52,10 +44,36 @@ main{
     height: 70px;
     z-index: 1000!important;
 }
-.logo>a>img{
+header .logo>a>img{
     height: 55px;
 }
+
+/* main section */
+main{
+    flex: 1;
+    display: flex;
+    width:100%;
+    overflow: hidden;
+    background-color: var(--black);
+}
+
+/* side bar section */
+.sidebar-section{
+    position: relative;
+    width: 20%;
+    flex: 0.20;
+    overflow-y: scroll;
+    margin-right: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+}
 .my-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     height: 40px;
     background-color: var(--black);
 }
@@ -85,13 +103,17 @@ margin-top: 80px;
 .forth-card{
     margin-top: 10px;
     }
-
-
 ::-webkit-scrollbar{
     display: none;
 }
+
+/* content section */
 .content-section-1{
     position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
     width:80%;
     flex: 0.80;
     overflow-y: auto;
@@ -101,7 +123,7 @@ margin-top: 80px;
     width: auto;
     height: 5vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     box-sizing: border-box;
     position: absolute;
@@ -109,6 +131,7 @@ margin-top: 80px;
 }
 .nav-button-left>img,.nav-button-right>img{
     margin: 2px 5px ;
+    filter: drop-shadow(0 0 0.5px white);
 }
 .nav-button-left{
     left: 10px!important;
@@ -194,7 +217,8 @@ margin-top: 80px;
     left: 0px;
     width: 100%;
     height: 10vh;
-    background-color: var(--grey);
+    background-color: black;
+    color: white;
 }
 .player-1,.player-3{
     display: flex;
@@ -218,7 +242,7 @@ margin-top: 80px;
     align-items: center;
 margin-top: 3px;
  width: 50vw;
- background-color: var(--grey);
+ background-color: black;
 }
 .progress-bar{
     border-radius: 5px;
